@@ -18,7 +18,7 @@ clean build
 make clean
 ```
 
-## repack boot.img
+## repack logo.img
 
 unpack logo.img
 
@@ -57,8 +57,8 @@ flash you repack logo.img
 
 ```bash
 adb reboot bootloader
-fastboot flash LOGO modified.logo.bin # op6.out will make new logo.img: modified.logo.bin
-# or you can only flash _a or _b, like this:
+fastboot flash LOGO modified.logo.bin # op6.out will make new logo.img: modified.logo.bin on you active partition.
+# or you want to only flash _a or _b, like this:
 fastboot flash LOGO_a modified.logo.bin
 fastboot flash LOGO_b modified.logo.bin
 ```
